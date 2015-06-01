@@ -1,0 +1,122 @@
+#logout {position:absolute; top:10px; right:10px;}
+
+body.user {margin:0px; padding: 63px 0px 0px 0px; font: normal 90% Tahoma, "Trebuchet MS", Trebuchet, Helvetica, Verdana, sans-serif;color: #036}
+body.admin {margin:0px; padding: 83px 0px 0px 0px; font: normal 90% Tahoma, "Trebuchet MS", Trebuchet, Helvetica, Verdana, sans-serif;color: #036}
+div#header{  position:fixed;  z-index:1; top:0;  left:0;  width:100%;  height:60px; background-color: #EEE;text-align: center; font-weight: bold; border-width:0px 0px 1px 0px; border-color:#003366; border-style:solid;overflow:visible;}
+div#admin_nav { position:fixed;  top:60px;  left:0;  width:100%;  height:20px;background-color: #EEE; color: #036; font-size: 100%; border-width:0px 0px 1px 0px; border-style:solid; border-color:#036; padding:0px;}
+
+/*
+@media screen{
+  body>div#header{
+   position:fixed;
+  }
+  body>div#admin_nav{
+   position:fixed;
+  }
+}
+*/
+/** html body{ overflow:hidden; } 
+* html div#content{ height:100%; background-color: #FFF; overflow:auto; text-align:center;z-index:-1}*/
+
+
+a:link            { color: #003366; text-decoration:none; }
+a:active        { color: #4477aa; text-decoration:none; }
+a:visited        { color: #114477; text-decoration:none; }
+a:hover            { color: #6699cc; text-decoration:none; }
+.toptext { color: #036; font-size: 90%; font-style: italic; }
+.toptitle { color: #036; font-size: 140%; font-weight: bold; }
+.message { margin:0px; color: red; font-size: 120%; position: absolute; top: 60px; right: 15px; font-weight: normal;z-index:10;}
+
+td.navleft { border-width:0px;font-size: 100%; height:28px; text-align:left; white-space:nowrap; font-weight:normal; margin:0px;padding:0px; }
+td.navcenter { border-width:0px;font-size: 130%; height:28px; margin:0px; text-align:center; font-weight: bold; white-space: nowrap;padding:0px;}
+td.navright { border-width:0px;font-size: 100%; height:28px; text-align:right; white-space:nowrap; font-weight:normal;margin:0px;padding:0px;}
+table tr.table-header td, td.table-header {background-color:#C0C0C0; 
+										font-size: 110%; 
+										text-align:center; 
+										font-weight: bold; 
+										color: white; padding:3px;}
+td.feriale-left {background-color:#DDDDDD; text-align:left; }
+td.festivo-left {background-color:#CCCCFF; text-align:left; }
+td.feriale-center {background-color:#DDDDDD; text-align:center; }
+td.festivo-center {background-color:#CCCCFF; text-align:center; }
+
+img {border-width:0px;}
+.link {cursor:pointer;}
+table {border-collapse: collapse;}
+table.mese { border:1px solid #eee; font-size:100%; margin-left:auto; margin-right:auto;}
+table.mese td {border: 1px solid #EEE;}
+table tr.row_attivo td,table.mese td.row_attivo {background-color:#EEEEEE; text-align:left;border:1px solid #CCC; }
+table tr.row_inattivo td,table.mese td.row_inattivo {background-color:#CCCCCC; text-align:left;border:1px solid #EEE;}
+table.mese td.header{background-color:#D0D0D0; text-align:left;border:1px solid #EEE; }
+
+table.login_form { text-align:center;}
+table.login_form td.left { text-align:left;}
+table.login_form td.right { text-align:right; }
+
+table.edit { border-width:1px; border-style: solid; border-color: #eee; font-size:100%; margin-left:auto; margin-right:auto;}
+table.edit input 
+{
+	background-color:#EEEEEE; 
+	text-align:left; 
+	border-style:solid;
+	border-width:1px; 
+	border-color:#CCC;
+	font: normal 110% Tahoma, "Trebuchet MS", Trebuchet, Helvetica, Verdana, sans-serif;
+	color: #036
+}
+table.edit select {background-color:#EEEEEE; text-align:left; border-style:solid;border-width:1px; border-color:#CCC;font: normal 110% Tahoma, "Trebuchet MS", Trebuchet, Helvetica, Verdana, sans-serif;color: #036}
+table.edit input.check {background-color:#EEEEEE; text-align:left; border-style:none;border-width:0px;}
+table.edit td 
+{
+	border: 1px solid #ccc;
+	background-color:#EEEEEE; 
+	padding-left:4px; 
+	padding-right:4px; 
+	text-align:left; 
+}
+
+table.edit td.left {background-color:#EEEEEE; padding-left:2px; padding-right:2px; text-align:left;border:1px solid #ccc; }
+table.edit td.right {background-color:#EEEEEE; padding-left:2px; padding-right:2px; text-align:right;border:1px solid #ccc; }
+table.edit td.header  {background-color:#DDDDDD; padding:5px; text-align:center; font-weight:bold;border:1px solid #ccc; }
+table.edit td.footer  {background-color:#DDDDDD; padding:1px; text-align:center;border:1px solid #ccc; }
+
+input.button {background-color:#DDDDDD; padding: 0px 4px;margin: 0px; text-align:center;border-style:solid;border-width:1px; border-color:black; font: normal 100% Tahoma, "Trebuchet MS", Trebuchet, Helvetica, Verdana, sans-serif;color: #036}
+p.titolo-tab { margin:0px; color: #036; font-size: 130%; font-weight:bold; text-align:center;}
+p.titolo { color: #036; font-size: 120%; font-weight:normal; text-align:center; margin:0px;}
+table.admin_nav { color: #036; font-size: 80%; padding:0; border:0px solid #eee;margin:0px;}
+
+table.edit .input,table.edit select,table.edit input,.input {background-color:#FFFFFF; text-align:left; border-style:solid;border-width:1px; border-color:#CCC;font: normal 110% Tahoma, "Trebuchet MS", Trebuchet, Helvetica, Verdana, sans-serif;color: #036}
+table.tab_header { border:0px solid #eee; width:100%; margin:0px; padding:0px;}
+p.title { margin:0px; display:inline;font-size:120% }
+div.centra { text-align:center }
+div.inline { display:inline; float:left; width:250px;height:150px; }
+div.inline_large { display:inline; float:left; width:300px;height:150px; }
+
+table.edit td.nopadding 
+{
+	padding:0px; 
+	margin:0px; 
+}
+
+table.edit table#table_detail col.col3
+{
+	width:380px;
+	color:red;
+	background-color:red;
+}
+
+table.edit table#table_detail
+{
+	margin:0px;
+	padding:0px;
+	border-width:0px;
+}
+#waitDiv
+{
+	width:100%;
+	text-align:center;
+}
+img.wait
+{
+	margin:20px auto;
+}
