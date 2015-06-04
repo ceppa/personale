@@ -1832,7 +1832,7 @@ function stampa_indennita($mese,$anno)
 	$pdf->SetDrawColor(20,20,20);
 	$pdf->SetFont('Arial','B',12);
 	$pdf->SetXY(7,7);
-	$pdf->Cell(283,5,TRASFERTA,1,2,'C',0);
+	$pdf->Cell(283,5,"TRASFERTA",1,2,'C',0);
 	$pdf->SetFont('Arial','B',11);
 	$pdf->Ln(1);
 	$pdf->Cell(283,5,"INCARICO E AUTORIZZAZIONE",1,2,'C',0);
@@ -1928,7 +1928,7 @@ function stampa_indennita($mese,$anno)
 	$pdf->ln(4);
 	$y=$pdf->GetY()+2;
 	$pdf->SetFont('Arial','',10);
-	$pdf->Cell(283,4,($_SESSION["sesso_dip"]=='F'?"La sottoscritta ":"Il sottoscritto ").$_SESSION["cognome"]." ".$_SESSION["nome"]." dichiara di ricevere in data odierna la somma a margine indicata",0,2,'L',0);
+	$pdf->Cell(283,4,(@$_SESSION["sesso_dip"]=='F'?"La sottoscritta ":"Il sottoscritto ").$_SESSION["cognome"]." ".$_SESSION["nome"]." dichiara di ricevere in data odierna la somma a margine indicata",0,2,'L',0);
 	$pdf->Cell(283,4,"quale indennit".chr(225)." forfetaria, ai sensi dell'art.51 comma 5 DPR 917/86 e rimborso delle spese vive ",0,2,'L',0);
 	$pdf->Cell(283,4,"sostenute per le trasferte svolte fuori dal territorio comunale",0,2,'L',0);
 	$pdf->ln(2);

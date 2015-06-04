@@ -74,7 +74,7 @@
 		}
 		if($multi)
 			foreach($values as $k=>$v)
-				if(!strlen($_POST[$k."_c"]))
+				if(!strlen(@$_POST[$k."_c"]))
 					unset($values[$k]);
 
 		if(count($values))

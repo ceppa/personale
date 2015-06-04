@@ -126,11 +126,12 @@
 					$_SESSION['ingresso_def']=$row['ingresso_def'];
 					$_SESSION['uscita_def']=$row['uscita_def'];
 					$_SESSION['pausa_def']=$row['pausa_def'];
+					$_SESSION['sesso_dip']=$row['sesso_dip'];
 
 		        	$is_logged = true;
 		        	header("Location: $self");
 				}
-	    	}
+	    }
 			else
 			{
 				$message = 'password incorretta!';
@@ -222,7 +223,7 @@
 		$_SESSION['ingresso_def']=$row['ingresso_def'];
 		$_SESSION['uscita_def']=$row['uscita_def'];
 		$_SESSION['pausa_def']=$row['pausa_def'];
-
+		$_SESSION['sesso_dip']=$row['sesso_dip'];
 		$is_logged = true;
 
 		((mysqli_free_result($result) || (is_object($result) && (get_class($result) == "mysqli_result"))) ? true : false);
@@ -265,6 +266,7 @@
 		$_SESSION['ingresso_def']=$row['ingresso_def'];
 		$_SESSION['uscita_def']=$row['uscita_def'];
 		$_SESSION['pausa_def']=$row['pausa_def'];
+		$_SESSION['sesso_dip']=$row['sesso_dip'];
 
 		$is_logged = true;
 

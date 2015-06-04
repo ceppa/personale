@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set("Europe/Rome");
-//ini_set("error_reporting",E_ALL & ~E_NOTICE & ~E_STRICT);
-ini_set("error_reporting",E_ALL);
+ini_set("error_reporting",E_ALL & ~E_NOTICE & ~E_STRICT);
+//ini_set("error_reporting",E_ALL);
 
 include ("include/session.php");
 include ("include/const.php");
